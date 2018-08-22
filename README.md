@@ -1,2 +1,2 @@
-# message-board
+# message_board
 Message board web design
