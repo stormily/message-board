@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>留言板</title>
+<style type="text/css">
+body{font-family:"Microsoft Yahei";}
+h1{
+    text-align:center;
+}
+legend{
+    text-align:center;
+}
+p{
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+  {% if message %}
+  <p style="color:red">{{ message }}</p>
+  {% endif %}
+  <form action="/signin" method="post">
+    <h1>留言板</h1>
+    <legend>Please input:</legend>
+    <p><input name="username" placeholder="Username" value="{{ username }}"></p>
+    <p><input name="message" placeholder="message" value="{{ message }}"></p>
+    <p><button type="submit">Submit</button></p>
+  </form>
+</body>
+</html>
