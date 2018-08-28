@@ -2,22 +2,23 @@
 <head>
     <title>message board</title>
     <style type="text/css">
-	body{font-family:"Microsoft Yahei";}
-	h1{
-    	text-align:center;
-	}
-	p{
-	    text-align:center;
+	body{font-family:"Microsoft Yahei";font-size:22px;color:#666;}
+	h1{text-align:center;}
+	p{text-align:center;}
+	img{text-align:center;}
+	li{
+		height: 100px;
 	}
 	</style>
 </head>
 
 <body>
     <form action="/" method="post">
-    	<h1>message board</h1>
-    	<p><br>Username: <input type="text" name="username"> </br></p>
-        <p><br>Message: <input type="text" name="message"> </br></p>
-        <p><input type="submit" value="Submit"></p>
+    	<li><h1>message board</h1>
+    	<p><br>Username: <input type="text" name="username"> </br>
+        <br>&nbspMessage&nbsp;: <input type="text" name="message"> </br></p>
+        <p><a href="view?p=1">查看留言</a></p>
+        <p><input type="submit" value="Submit"></p></li>
     </form>
 </body>
 </html>
